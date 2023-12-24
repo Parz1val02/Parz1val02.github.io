@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My website</title>
+    
+    
+    
+    <link>https://example.org/</link>
+    <description>Recent content on My website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 Dec 2023 19:04:30 -0500</lastBuildDate>
+    
+	<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ice</title>
+      <link>https://example.org/posts/ice/</link>
+      <pubDate>Sat, 23 Dec 2023 19:04:30 -0500</pubDate>
+      
+      <guid>https://example.org/posts/ice/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://example.org/img/ice/ice.jpg&#34;/&gt;
+          
+        
+        
+        
+          &lt;p&gt;#WindowsExploitation&lt;/p&gt;
+&lt;p&gt;Writeup for the THM Room Ice&lt;/p&gt;
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Linux Backdoors</title>
+      <link>https://example.org/posts/linux-backdoors/</link>
+      <pubDate>Sat, 23 Dec 2023 18:12:17 -0500</pubDate>
+      
+      <guid>https://example.org/posts/linux-backdoors/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://example.org/img/linux-backdoors/linux-backdoors.jpg&#34;/&gt;
+          
+        
+        
+        
+          &lt;p&gt;#Linux&lt;/p&gt;
+&lt;p&gt;Types of linux backdoors&lt;/p&gt;
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Wed, 20 Dec 2023 02:15:40 -0500</pubDate>
+      
+      <guid>https://example.org/about/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Hello friend. Hello friend? That&amp;rsquo;s lame. Maybe I should give you a name. But that&amp;rsquo;s a slippery slope, you&amp;rsquo;re only in my head, we have to remember that. Sh*t, this actually happened, I&amp;rsquo;m talking to an imaginary person.
+What I&amp;rsquo;m about to tell you is top secret. A conspiracy bigger than all of us. There&amp;rsquo;s a powerful group of people out there that are secretly running the world. I&amp;rsquo;m talking about the guys no one knows about, the ones that are invisible.
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
